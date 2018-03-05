@@ -1,0 +1,706 @@
+/*
+Project Name: Blank Template
+Client: Your Client
+Author: Your Name
+Developer @GA in NYC
+*/
+
+/******************************************
+/* SETUP
+/*******************************************/
+
+/* Box Model Hack */
+
+* {
+  -moz-box-sizing: border-box;
+  /* Firexfox */
+  -webkit-box-sizing: border-box;
+  /* Safari/Chrome/iOS/Android */
+  box-sizing: border-box;
+  /* IE */
+}
+
+/* Clear fix hack */
+
+.clearfix:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+
+.clear {
+  clear: both;
+}
+
+.alignright {
+  float: right;
+  padding: 0 0 10px 10px;
+  /* note the padding around a right floated image */
+}
+
+.alignleft {
+  float: left;
+  padding: 0 10px 10px 0;
+  /* note the padding around a left floated image */
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+  color: #333942;
+  font-size: 12px;
+  line-height: 1.4;
+  font-family: Helvetica, Arial, sans-serif;
+  background-color: lightgrey;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+/* Center the container */
+
+#container {
+  width: 100%;
+  margin: auto;
+}
+
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+
+header {
+
+  width: 90%;
+  height: 90px;
+  background-color: white;
+  margin-right: 5%;
+  margin-left: 5%;
+  float: left;
+  clear: both;
+}
+
+nav {
+  float: left;
+}
+
+.navi {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: white;
+  background-size: cover;
+  float: right;
+  width: 100%;
+}
+
+.navi>li {
+  float: left;
+}
+
+.navi>li a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 40px 35px;
+  text-decoration: none;
+  font-size: 1.4em;
+  margin-left: 0%;
+}
+
+.navi > li a > button{
+  background-color: black;
+  color: white;
+  height: 30px;
+  box-shadow: none;
+  width: 100px;
+  border-style: none;
+
+
+}
+
+.navi>li a:hover {
+  background-color: lightgrey;
+}
+
+.leftbanner, .rightbanner {
+
+  width: 45%;
+  height: 450px;
+  background-color: #F2F3F5;
+  float: left;
+}
+
+.leftbanner, .lefthistory {
+  margin-left: 5%;
+}
+
+.leftbanner>img {
+  margin-left: 30%;
+  height: 100px;
+  filter: grayscale(100%);
+}
+
+.leftbanner>h1 {
+  font-weight: normal;
+  font-size: 2.3em;
+  text-align: center;
+}
+
+.leftbanner > form input, .bottomsecright > form input {
+  width: 57%;
+  height: 40px;
+  margin-left:5%;
+  float: left;
+  border-style:1px groove ;
+  border-radius: 5px;
+  border-color: #89969e;
+
+}
+
+.bottomsecright > form input{
+  width: 50%;
+  height: 40px;
+  float: left;
+  border-style:1px groove ;
+  border-radius: 5px;
+  border-color: #89969e;
+  margin-top: 30px;
+}
+
+ .bottomsecright > form .sub{
+  font-size: 1.5em;
+  height: 40px;
+  width: 20%;
+  color: white;
+  background-color: #8D9AA2;
+  border-style: groove;
+  border-color: #89969e;
+  float: left;
+  margin-left: 2%;
+}
+.leftbanner > form .button{
+  font-size: 1.5em;
+  height:40px;
+  width: 23%;
+  color: white;
+  background-color: #b8c5cf;
+  border-style: groove;
+  border-color: #89969e;
+  float: left;
+  margin-left: 2%;
+}
+
+
+.empowers>h2 {
+  font-size: 2em;
+  text-align: center;
+  margin-left: 15%;
+  margin-right: 15%;
+}
+
+.leftbanner>p {
+  font-weight: normal;
+  font-size: 1.5em;
+  text-align: left;
+  margin-left: 5%;
+  margin-top: -20px;
+}
+
+.leftbanner>h4 {
+  font-size: 1.1em;
+  margin-left: 5%;
+  margin-top: 50px;
+  font-weight: normal;
+}
+
+.rightbanner>img {
+  height: 445px;
+  margin-left: 10%;
+}
+
+.rightbanner, .righthistory {
+  margin-right: 5%;
+}
+
+.empowers {
+  width: 90%;
+  height: 100px;
+  background-color: white;
+  margin-right: 5%;
+  margin-left: 5%;
+  float: left;
+}
+
+.leftdescrip {
+
+  width: 45%;
+  height: 75px;
+  background-color: white;
+  float: left;
+  margin-left: 5%;
+  font-size: 1.2em;
+  position: relative;
+  float: left;
+}
+
+.rightdescrip {
+
+  width: 45%;
+  height: 75px;
+  background-color: white;
+  float: left;
+  margin-right: 5%;
+  position: relative;
+  margin-bottom: 0px;
+  font-size: 1.2em;
+  float: left;
+}
+
+.rightdescrip:after, .leftdescrip:after {
+  content: '';
+  position: absolute;
+  width: 35%;
+  left: 8%;
+  top: 10px;
+  border-top: 4px solid #ffddf0;
+}
+
+.rightdescrip>p, .leftdescrip>p {
+  width: 80%;
+  margin-left: 9%;
+}
+
+.bottomempower {
+
+  width: 90%;
+  height: 60px;
+  background-color: white;
+  margin-right: 5%;
+  margin-left: 5%;
+  float: left;
+}
+
+.bottomempower>p {
+  font-style: italic;
+  color: gray;
+  text-align: center;
+  font-size: 1.2em;
+  width: 70%;
+  margin-left: 15%;
+}
+
+.rightdescrip>p>span, .leftdescrip>p>span {
+  font-weight: bold;
+}
+
+.lefthistory {
+
+  width: 60%;
+  height: 600px;
+  background-color: #F2F3F5;
+  float: left;
+}
+
+.lefthistory>p {
+  font-size: 1.4em;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.lefthistory>h3 {
+  margin-left: 10%;
+  font-size: 1.5em;
+}
+
+.righthistory {
+
+  width: 30%;
+  height: 600px;
+  background-color: #F2F3F5;
+  float: left;
+}
+
+.righthistory > p{
+  font-style: italic;
+  text-align: center;
+  color: gray;
+}
+.righthistory>img {
+  height: 220px;
+  width: 80%;
+  display: block;
+  margin: 5%;
+  filter: grayscale(90%);
+}
+
+.aboutus {
+  width: 90%;
+  height: 70px;
+  background-color: #FFFFFF;
+  margin-right: 5%;
+  margin-left: 5%;
+  float: left;
+  clear: both;
+}
+
+.aboutus>h2 {
+  text-align: center;
+  padding-top: 20px;
+}
+
+.founder {
+  width: 90%;
+  height: 490px;
+  background-color: #FFFFFF;
+  margin-right: 5%;
+  margin-left: 5%;
+  float: left;
+  clear: both;
+}
+
+.founderin {
+  border: 1px solid black;
+  width: 80%;
+  height: 400px;
+  background-color: #FFFFFF;
+  margin: 5% 10%;
+  box-shadow: 3px 3px 3px 3px gray;
+  float: left;
+  clear: both;
+}
+
+.founderin>img {
+  width: 25%;
+  height: 350px;
+  margin-top: 20px;
+  margin-left: 5%;
+  margin-right: 5%;
+  float: left;
+}
+
+.founderin>h4, .founderin>p {
+  font-size: 1.3em;
+  width: 96%;
+}
+
+.fish, .simmons {
+
+  width: 45%;
+  height: 300px;
+  background-color: white;
+  float: left;
+}
+
+.fish {
+  margin-left: 5%;
+}
+
+.fish>h3 {
+  text-align: left;
+  font-size: 1.5em;
+  margin: 5%;
+  color: gray;
+}
+
+.fish>p, .simmons>p {
+  text-align: left;
+  margin: 5%;
+  font-size: 1.3em;
+  line-height: 1.4em;
+}
+.simmons > p{
+  margin-top: 2%;
+}
+
+.simmons {
+  margin-right: 5%;
+}
+
+.simmons>img {
+  float: left;
+  height: 60px;
+  width: 25%;
+  margin-left: 4%;
+  filter: grayscale(100%);
+}
+
+.simmons>p, .bottomsecleft>h3 {
+  float: left;
+}
+
+.bottomsecleft>h3 {
+  color: white;
+  float: right;
+  font-size: 1.5em;
+  margin-top: 35px;
+  margin-right: 20px;
+}
+
+
+.bottomsecleft {
+  width: 35%;
+  height: 95px;
+  background-color: #BAC5CB;
+  margin-left: 5%;
+  float: left;
+}
+
+.bottomsecright {
+  width: 55%;
+  height: 95px;
+  background-color: #BAC5CB;
+  margin-right: 5%;
+  float: left;
+}
+
+.copyright {
+  width: 50%;
+  border-bottom: 1px solid white;
+  height: 30px;
+  float: left;
+
+}
+  .social{
+    width: 50%;
+    border-bottom: 1px solid white;
+    height: 30px;
+    float: left;
+  }
+
+.links {
+  width: 90%;
+  height: 165px;
+  margin-right: 5%;
+  margin-left: 5%;
+  margin-top: 3%;
+
+}
+
+.copyright>h4 {
+  color: white;
+  float: left;
+  margin-left: 25%;
+  font-size: 1.1em;
+  margin-top:10px;
+
+}
+
+.sociallist li {
+  list-style-type: none;
+  float: left;
+  margin-left: 15%;
+}
+.sociallist li a{
+  text-decoration: none;
+  color: white;
+  float: right;
+}
+
+footer {
+  width: 90%;
+  height: 200px;
+  background-color: #8D9AA2;
+  margin-right: 5%;
+  margin-left: 5%;
+  float: left;
+  clear: both;
+}
+.bottomnav li{
+  list-style-type: none;
+}
+
+.bottomnav li a{
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  list-style: none;
+  padding-left: 5%;
+
+}
+.bottomnav{
+  list-style-type: none;
+  margin-top: 30px;
+  padding: 0;
+  overflow: hidden;
+  background-size:cover;
+  float: right;
+  width:100%;
+
+}
+
+.bottomnav > li{
+  float: left;
+  color: white;
+}
+.nestlink{
+  margin-left: -30%;
+}
+.nestlink2{
+  margin-left: -23%
+}
+.nestlink3{
+  margin-left: -26%;
+}
+
+/*things I want to take out for mobile view: business woman icon and rightsection that it is in,
+left and right descrip,
+hide bottom nav e nested lists,
+ photo captions can go underneath history and not be floated,take away header that says "who we are"
+ extend widths
+*/
+
+@media (min-width:300px) and (max-width: 500px) {
+  .leftdescrip,.leftbanner > form input, .leftbanner > h4, form input, .rightdescrip, .bottomempower, .leftbanner>p, .rightbanner,.navi > li a > button, .rightbanner > img,.links, .aboutus, .righthistory, .righthistory > img, footer, .lefthistory{
+    display: none;
+  }
+  body{
+    background-color: coral;
+  }
+  header {
+    width: 90%;
+    height: 30px;
+    background-color: white;
+    margin-right: 5%;
+    margin-left: 5%;
+    float: left;
+    clear: both;
+
+}
+  .lefthistory {
+    width: 100%;
+    height: 600px;
+    background-color: #F2F3F5;
+    float: left;
+  }
+  .leftbanner > img {
+      height: 40px;
+      width: 30%;
+      margin-left: 35%;
+    }
+  .bottomsecleft> h3{
+    font-size: .9em;
+    margin-left: 10%;
+    margin-top: 10px;
+  }
+  .leftbanner > form input{
+    width: 30%;
+    height: 30px;
+    border-style:1px groove ;
+    border-radius: 5px;
+    border-color: #89969e;
+
+  }
+  .bottomsecright > form .sub {
+      font-size: .8em;
+      height: 20px;
+      width: 25%;
+      color: white;
+      background-color: #8D9AA2;
+      border-style: groove;
+      border-color: #89969e;
+      float: none;
+      margin-top: 10px;
+}
+
+.bottomsecright > form input {
+    width: 30%;
+    height: 20px;
+    margin-top: 10px
+  }
+  .bottomsecleft {
+    width: 45%;
+    height: 55px;
+    background-color: #BAC5CB;
+    float: left;
+}
+.bottomsecright{
+  width: 45%;
+  height: 55px;
+  background-color: #BAC5CB;
+  float: right;
+}
+.fish>p, .simmons>p {
+    text-align: left;
+    margin: 5%;
+    font-size: .9em;
+    line-height: 1.4em;
+}
+.simmons>p{
+  font-size: .8em;
+}
+.founderin>h4, .founderin>p {
+    font-size: .8em;
+    width: 96%;
+}
+.founderin>img {
+    width: 25%;
+    height: 200px;
+    margin-top: 20px;
+    margin-left: 5%;
+    margin-right: 5%;
+    float: left;
+}
+.founderin {
+    border: 1px solid black;
+    width: 80%;
+    height: 350px;
+    background-color: #FFFFFF;
+    margin: 5% 10%;
+    box-shadow: 3px 3px 3px 3px grey;
+    float: left;
+    clear: both;
+}
+.founder {
+    width: 90%;
+    height: 400px;
+    background-color: #FFFFFF;
+    margin-right: 5%;
+    margin-left: 5%;
+    float: left;
+    clear: both;
+}
+.empowers {
+    width: 90%;
+    height: 100px;
+    background-color: white;
+    margin-right: 5%;
+    margin-left: 5%;
+    float: left;
+}
+.empowers>h2 {
+    font-size: 1.1em;
+    text-align: center;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+.leftbanner{
+    width: 90%;
+    height: 150px;
+    background-color: #F2F3F5;
+    float: left
+  }
+  .leftbanner > form .button {
+    font-size: 1.5em;
+    height: 30px;
+    width: 23%;
+}
+
+.navi>li a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 10px 10px;
+  text-decoration: none;
+  margin-left: 0%;
+  font-size: .5em
+}
+
+}
